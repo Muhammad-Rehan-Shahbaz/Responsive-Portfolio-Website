@@ -1,0 +1,350 @@
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .navitems ul {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 40px;
+    padding: 0px;
+  }
+  .navitems ul li {
+    text-align: center;
+  }
+  .hamburger-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(108, 117, 125);
+    align-self: flex-end;
+    margin: 10px 20px 0 0;
+  }
+
+  .navitems {
+    display: none;
+    width: 100%;
+  }
+
+  .navbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger-btn {
+    margin-bottom: 10px;
+  }
+  .menu-checkbox:checked + .hamburger-btn::after {
+    position: relative;
+    left: -15px;
+  }
+  .menu-checkbox:checked ~ .navitems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-btn::before {
+    content: "☰";
+  }
+
+  .menu-checkbox:checked + .hamburger-btn::before {
+    content: "✖";
+
+    left: 0px;
+  }
+  #home {
+    margin-bottom: 0px;
+  }
+  #home pre {
+    font-size: 2.2rem;
+  }
+  #home p {
+    font-size: 20px;
+  }
+
+  .aboutItems {
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+  }
+  .aboutLogo img {
+    height: 200px;
+    width: 200px;
+  }
+  #serviceSection {
+    margin-top: 0px;
+  }
+  .serviceCardContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #portfolioSection {
+    display: flex;
+    margin-bottom: 50px;
+    padding-top: 10px;
+  }
+
+  .PortfolioCard {
+    flex-direction: column;
+    flex-basis: 70%;
+  }
+  .PortfolioCardContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .PortfolioCard img {
+    width: 100%;
+  }
+  .pricingCardContainer {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .pricingCard {
+    flex-basis: 25%;
+  }
+  .pricingItems {
+    padding: 0px;
+  }
+
+  .hiremesectionbar {
+    max-width: 100%;
+    margin-top: 0px;
+    padding: 50px;
+  }
+  .hiremeItems {
+    padding: 0px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .hiremeItems button {
+    margin: 20px auto;
+  }
+  .hiremetext {
+    text-align: center;
+  }
+  #hiremeSection {
+    padding: 10px;
+  }
+  .hiremetext h1 {
+    font-size: 1rem;
+  }
+  #testmonialSection {
+    margin-bottom: 0px;
+  }
+  .testmonialgroupcardscontainer {
+    flex-direction: column;
+    margin-right: 100px;
+  }
+  .testmonialgroupcardscontainer {
+    flex-direction: column;
+  }
+  .testmonialCard {
+    padding-right: 10px;
+  }
+  .blogCardContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  #contactSection {
+    margin-top: 0px;
+  }
+  .contactrow1 input {
+    width: 100%;
+  }
+  .contactrow2 textarea {
+    margin: 0px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navitems ul {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .hamburger-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(108, 117, 125);
+    align-self: flex-end;
+    margin: 10px 20px 0 0;
+  }
+
+  .navitems {
+    display: none;
+    width: 100%;
+  }
+  .hamburger-btn {
+    margin-bottom: 10px;
+  }
+
+  .navbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-checkbox:checked + .hamburger-btn::after {
+    position: relative;
+    left: -15px;
+  }
+
+  .menu-checkbox:checked ~ .navitems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-btn::before {
+    content: "☰";
+  }
+
+  .menu-checkbox:checked + .hamburger-btn::before {
+    content: "✖";
+  }
+
+  .aboutItems {
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+  }
+  #serviceSection {
+    margin-top: 0px;
+  }
+  .serviceCardContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .serviceCard {
+    flex-basis: 40%;
+  }
+  #portfolioSection {
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+  .PortfolioCard {
+    flex-direction: column;
+    flex-basis: 80%;
+  }
+  .PortfolioCardContainer {
+    margin-top: 50px;
+  }
+
+  .PortfolioCard img {
+    width: 100%;
+  }
+  #pricingSection {
+    margin-top: 100px;
+  }
+  .pricingCardContainer {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 50px;
+    gap: 20px;
+  }
+  .pricingCard {
+    flex-basis: 10%;
+  }
+  .hiremesectionbar {
+    height: auto;
+  }
+
+  .hiremeItems {
+    padding: 0px;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hiremeItems button {
+    margin: auto;
+  }
+  .testmonialCardContainer img {
+    top: 20px;
+  }
+  .testmonialgroupcardscontainer {
+    flex-direction: column;
+  }
+  .blogItems {
+    margin: 0px 100px;
+  }
+  .blogCardContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #contactSection {
+    margin-top: 20px;
+  }
+  #blogSection {
+    margin-top: 20px;
+  }
+  #testmonialSection {
+    margin-bottom: 0px;
+  }
+}
+
+/* 
+@media (max-width: 875px) {
+  .navbarcontainer {
+    display: none;
+  }
+  #home{
+    display: none;
+  }
+  
+  #aboutSection{
+    display: none;
+  }
+  #serviceSection{
+    display: none;
+  }
+  #portfolioSection{
+    display: none;
+  }
+  #pricingSection{
+    display: none;
+  }
+  .hiremesectionbar{
+    
+    display: none;
+  }
+  #testmonialSection{
+    display: none;
+  }
+  #blogSection{
+    display: none;
+  }
+  #contactSection{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+} */
